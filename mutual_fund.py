@@ -31,7 +31,7 @@ def get_snapshot(port_soup):
 
 
 def get_portfolio(port_soup):
-    """Return stocks invested in by the fund"""
+    """Returns the stocks invested in by the fund as a dictionary"""
     table = port_soup.find(id="equityCompleteHoldingTable")
     name = 0
     value = 4
